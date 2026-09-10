@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yksityisyyskäytännöt | Kuvauspalvelu Salopino Oy</title>
+  <meta name="description" content="Kuvauspalvelu Salopino Oy:n tietosuoja- ja rekisteriseloste: henkilötietojen käsittely, evästeet, lomakkeet ja rekisteröidyn oikeudet.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.kuvauspalvelusalopino.fi/yksityisyyskaytannot/">
+  <style>
+    :root {
+      --navy: #071a2e;
+      --navy-2: #0e2b46;
+      --teal: #16b6a3;
+      --orange: #ff8a3d;
+      --ink: #142234;
+      --muted: #5a6878;
+      --line: #dce4ea;
+      --soft: #f4f7f9;
+      --white: #fff;
+      --radius: 18px;
+      --shadow: 0 16px 44px rgba(7, 26, 46, .10);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--soft);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: #087f74; text-underline-offset: 3px; }
+    a:hover { color: #075f58; }
+    .topbar {
+      background: var(--navy);
+      color: var(--white);
+    }
+    .topbar-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .brand { color: var(--white); font-weight: 800; text-decoration: none; letter-spacing: -.02em; }
+    .back { color: #d9edf0; font-weight: 650; text-decoration: none; }
+    .back:hover { color: var(--white); }
+    .hero {
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(22, 182, 163, .30), transparent 28rem),
+        linear-gradient(135deg, var(--navy), var(--navy-2));
+    }
+    .hero-inner { max-width: 1180px; margin: 0 auto; padding: 64px 24px 72px; }
+    .eyebrow { color: #7ce1d5; font-size: .82rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+    h1 { max-width: 850px; margin: 10px 0 18px; font-size: clamp(2.35rem, 6vw, 4.6rem); line-height: 1.04; letter-spacing: -.055em; }
+    .lead { max-width: 820px; margin: 0; color: #d8e4ed; font-size: clamp(1.02rem, 2vw, 1.22rem); }
+    .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+    .pill { border: 1px solid rgba(255,255,255,.24); border-radius: 999px; padding: 8px 13px; color: #edf7f7; font-size: .9rem; }
+    .layout { max-width: 1180px; margin: -30px auto 64px; padding: 0 24px; display: grid; grid-template-columns: minmax(220px, 300px) minmax(0, 1fr); gap: 28px; align-items: start; }
+    .toc, .content { background: var(--white); border: 1px solid rgba(7,26,46,.07); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .toc { position: sticky; top: 18px; padding: 24px; }
+    .toc h2 { margin: 0 0 12px; font-size: 1.05rem; }
+    .toc nav { display: grid; gap: 4px; }
+    .toc a { padding: 7px 9px; border-radius: 8px; color: var(--muted); text-decoration: none; font-size: .92rem; }
+    .toc a:hover { color: var(--navy); background: #ecf8f6; }
+    .content { padding: clamp(26px, 5vw, 58px); }
+    .notice { margin: 0 0 38px; padding: 18px 20px; border-left: 4px solid var(--teal); border-radius: 10px; background: #eef9f7; }
+    section.policy { scroll-margin-top: 24px; padding: 8px 0 32px; border-bottom: 1px solid var(--line); }
+    section.policy:last-child { border-bottom: 0; padding-bottom: 0; }
+    h2 { margin: 24px 0 12px; color: var(--navy); font-size: clamp(1.34rem, 3vw, 1.75rem); line-height: 1.25; letter-spacing: -.025em; }
+    h3 { margin: 22px 0 7px; color: var(--navy-2); font-size: 1.08rem; }
+    p { margin: 10px 0; }
+    ul { margin: 10px 0 12px; padding-left: 1.25rem; }
+    li { margin: 5px 0; }
+    .provider-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding: 0; list-style: none; }
+    .provider-list li { margin: 0; padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; background: #fafcfd; }
+    .contact-card { padding: 22px; border-radius: 14px; color: var(--white); background: var(--navy); }
+    .contact-card a { color: #8ee9df; }
+    footer { padding: 28px 24px 42px; color: var(--muted); text-align: center; font-size: .9rem; }
+
+    @media (max-width: 860px) {
+      .layout { grid-template-columns: 1fr; margin-top: -22px; }
+      .toc { position: static; }
+      .toc nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 560px) {
+      .topbar-inner { align-items: flex-start; flex-direction: column; }
+      .hero-inner { padding-top: 44px; }
+      .layout { padding: 0 14px; }
+      .toc nav, .provider-list { grid-template-columns: 1fr; }
+      .content { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="/">Kuvauspalvelu Salopino Oy</a>
+      <a class="back" href="/">← Takaisin etusivulle</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Tietosuoja ja rekisteriseloste</div>
+        <h1>Yksityisyyskäytännöt</h1>
+        <p class="lead">Tällä sivulla kerrotaan, mitä henkilötietoja Kuvauspalvelu Salopino Oy käsittelee, miksi tietoja käsitellään, kuinka niitä suojataan ja miten voit käyttää tietosuojaan liittyviä oikeuksiasi.</p>
+        <div class="meta">
+          <span class="pill">Päivitetty 10.9.2026</span>
+          <span class="pill">EU:n yleinen tietosuoja-asetus</span>
+          <span class="pill">Tietosuojalaki 1050/2018</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout">
+      <aside class="toc" aria-label="Sisällysluettelo">
+        <h2>Sisältö</h2>
+        <nav>
+          <a href="#rekisterinpitaja">1. Rekisterinpitäjä</a>
+          <a href="#tarkoitukset">2. Tarkoitukset</a>
+          <a href="#oikeusperusteet">3. Oikeusperusteet</a>
+          <a href="#tiedot">4. Kerättävät tiedot</a>
+          <a href="#kuvausaineistot">5. Kuvaus- ja 3D-aineistot</a>
+          <a href="#lomakkeet">6. Lomakkeet ja oppaat</a>
+          <a href="#markkinointi">7. Viestintä ja markkinointi</a>
+          <a href="#evasteet">8. Evästeet ja analytiikka</a>
+          <a href="#tietolahteet">9. Tietolähteet</a>
+          <a href="#palveluntarjoajat">10. Palveluntarjoajat</a>
+          <a href="#siirrot">11. Kansainväliset siirrot</a>
+          <a href="#sailytys">12. Säilytysajat</a>
+          <a href="#suojaus">13. Suojaus</a>
+          <a href="#oikeudet">14. Oikeutesi</a>
+          <a href="#muutokset">15. Muutokset</a>
+        </nav>
+      </aside>
+
+      <article class="content">
+        <p class="notice"><strong>Tiivistettynä:</strong> tietoja käytetään yhteydenottojen, tarjousten, asiakasprojektien, materiaalilatausten ja lakisääteisten velvoitteiden hoitamiseen. Tietoja ei myydä ulkopuolisille. Ei-välttämätön analytiikka ja markkinointiseuranta aktivoidaan vain evästevalinnan mukaisesti.</p>
+
+        <section class="policy" id="rekisterinpitaja">
+          <h2>1. Rekisterinpitäjä ja yhteyshenkilö</h2>
+          <p><strong>Kuvauspalvelu Salopino Oy</strong><br>
+            Y-tunnus: 3322279-3<br>
+            Manttaalitie 15 B, 37500 Lempäälä<br>
+            Puhelin: <a href="tel:+358405039850">040 503 9850</a><br>
+            Sähköposti: <a href="mailto:jari@kuvauspalvelusalopino.fi">jari@kuvauspalvelusalopino.fi</a><br>
+            Verkkosivusto: <a href="https://www.kuvauspalvelusalopino.fi/">www.kuvauspalvelusalopino.fi</a>
+          </p>
+          <p>Tietosuoja-asioiden yhteyshenkilö on Jari Salopino.</p>
+          <h3>Rekisterin nimi</h3>
+          <p>Kuvauspalvelu Salopino Oy:n asiakas-, yhteydenotto-, tarjouspyyntö-, markkinointi-, analytiikka- ja verkkopalvelurekisteri.</p>
+        </section>
+
+        <section class="policy" id="tarkoitukset">
+          <h2>2. Henkilötietojen käsittelyn tarkoitukset</h2>
+          <p>Henkilötietoja käsitellään seuraaviin tarkoituksiin:</p>
+          <ul>
+            <li>yhteydenottojen, tarjouspyyntöjen ja asiakaspalvelun käsittely</li>
+            <li>tarjousten laatiminen, palvelutarpeen arviointi ja asiakassuhteen hoitaminen</li>
+            <li>tilausten, sopimusten, projektien ja toimitusten hallinta</li>
+            <li>3D-kuvausten, valokuvausten, videoiden, dronekuvausten, lämpökuvausten ja muiden sovittujen kuvauspalvelujen toteuttaminen, toimittaminen ja ylläpito</li>
+            <li>laskutus, kirjanpito ja lakisääteisten velvoitteiden täyttäminen</li>
+            <li>ladattavien oppaiden ja muiden pyydettyjen materiaalien toimittaminen</li>
+            <li>verkkosivuston toimivuuden, tietoturvan ja käyttökokemuksen kehittäminen</li>
+            <li>analytiikka, konversioiden mittaaminen ja markkinoinnin kehittäminen käyttäjän evästevalintojen mukaisesti</li>
+            <li>väärinkäytösten, roskapostin ja teknisten ongelmien ehkäisy ja selvittäminen.</li>
+          </ul>
+        </section>
+
+        <section class="policy" id="oikeusperusteet">
+          <h2>3. Käsittelyn oikeusperusteet</h2>
+          <ul>
+            <li><strong>Sopimuksen valmistelu tai täyttäminen:</strong> tarjouspyyntöön vastaaminen, palvelun toteuttaminen ja asiakassuhteen hoitaminen.</li>
+            <li><strong>Oikeutettu etu:</strong> B2B-yhteydenpito, olemassa olevien ja mahdollisten asiakassuhteiden hoitaminen, asiakaspalvelu, palvelun kehittäminen, saatavien ja oikeusvaateiden käsittely, tietoturva sekä väärinkäytösten ehkäisy. Oikeutettua etua käytettäessä arvioidaan käsittelyn tarpeellisuus sekä rekisteröidyn edut, oikeudet ja kohtuulliset odotukset.</li>
+            <li><strong>Lakisääteinen velvoite:</strong> esimerkiksi kirjanpitoon, verotukseen ja viranomaisvaatimuksiin liittyvä käsittely.</li>
+            <li><strong>Suostumus:</strong> ei-välttämättömät evästeet, analytiikka, markkinointiseuranta ja sähköinen suoramarkkinointi silloin, kun suostumus on lain mukaan tarpeen.</li>
+          </ul>
+        </section>
+
+        <section class="policy" id="tiedot">
+          <h2>4. Mitä tietoja voidaan käsitellä?</h2>
+          <p>Rekisteröityjä voivat olla asiakkaiden ja yhteistyökumppaneiden yhteyshenkilöt, tarjouspyynnön tai muun yhteydenoton lähettäjät, uutiskirjeen tilaajat, verkkosivuston käyttäjät, mahdolliset yritysasiakkaat sekä kuvausaineistoissa tunnistettavissa olevat henkilöt.</p>
+          <h3>Yhteys- ja asiakastiedot</h3>
+          <ul>
+            <li>nimi, sähköpostiosoite, puhelinnumero ja tarvittaessa osoite</li>
+            <li>yritys tai organisaatio, Y-tunnus, rooli ja tehtävänimike</li>
+            <li>yhteydenoton sisältö, valittu palvelu ja tarjouspyynnön tiedot</li>
+            <li>kohteen tiedot, kuten tyyppi, koko, sijainti ja käyttötarkoitus</li>
+            <li>asiakas-, sopimus-, projekti-, toimitus- ja laskutustiedot sekä yhteydenpitohistoria.</li>
+          </ul>
+          <h3>Materiaali- ja lomaketiedot</h3>
+          <ul>
+            <li>oppaan tai materiaalin lataamiseen annetut tiedot</li>
+            <li>lomakkeen nimi, lähetysajankohta ja lähetyssivu</li>
+            <li>lataukseen liittyvät toimitus- ja tekniset lokitiedot.</li>
+          </ul>
+          <h3>Tekniset ja analytiikkatiedot</h3>
+          <ul>
+            <li>IP-osoite, selaintyyppi, käyttöjärjestelmä ja laitetyyppi</li>
+            <li>vierailun ajankohta, katsotut sivut, viipymä ja sivustolla tehdyt toiminnot</li>
+            <li>saapumissivu, viittaava sivusto sekä kampanja- ja UTM-tiedot</li>
+            <li>lomakkeen lähetykseen tai konversioon johtanut sivu, painike tai linkki, jos mittaus on käytössä.</li>
+          </ul>
+          <p>Analytiikka- ja markkinointitietoja kerätään vain käytössä olevien työkalujen ja käyttäjän evästevalintojen mukaisesti. Lomakkeilla ei ole tarkoitus kerätä erityisiin henkilötietoryhmiin kuuluvia tietoja, kuten terveystietoja.</p>
+        </section>
+
+        <section class="policy" id="kuvausaineistot">
+          <h2>5. Kuvaus-, drone- ja 3D-aineistot</h2>
+          <p>Palvelujen yhteydessä tuotettaviin valokuviin, videoihin, drone- ja lämpökuva-aineistoihin, 360-kuviin, pistepilviin sekä 3D-malleihin voi tallentua henkilöitä, ääntä, ajoneuvoja, rekisteritunnuksia, kiinteistöjen sijainti- ja tilatietoja tai muita tunnistettavia tietoja.</p>
+          <h3>Roolit asiakastoimeksiannoissa</h3>
+          <p>Kun asiakas määrittää toimeksiannon tarkoituksen, kuvattavan kohteen, aineiston käyttötarkoituksen ja sen, kenelle aineisto julkaistaan tai luovutetaan, asiakas toimii lähtökohtaisesti rekisterinpitäjänä ja Kuvauspalvelu Salopino Oy asiakkaan lukuun toimivana henkilötietojen käsittelijänä. Tällöin aineistoa käsitellään asiakkaan dokumentoitujen ohjeiden, toimeksiannon ja sovittujen tietosuoja- ja sopimusehtojen mukaisesti.</p>
+          <p>Jos Kuvauspalvelu Salopino Oy päättää itsenäisesti henkilötietojen käsittelyn tarkoituksesta ja olennaisista keinoista, esimerkiksi käyttäessään sovittua kuva-aineistoa omassa markkinoinnissaan tai referenssinä, yhtiö toimii tältä osin rekisterinpitäjänä. Käsittely perustuu tällöin sopimukseen, suostumukseen tai tapauskohtaisesti arvioituun oikeutettuun etuun.</p>
+          <h3>Tietojen minimointi ja julkaiseminen</h3>
+          <p>Kuvaukset pyritään suunnittelemaan niin, että sivullisia ja tarpeettomia henkilötietoja tallentuu mahdollisimman vähän. Tarvittaessa käytetään kuvausajankohtien rajaamista, käyttöoikeuksia, aineiston poistamista tai tunnistettavien yksityiskohtien, kuten kasvojen ja rekisteritunnusten, peittämistä. Verkossa katseltava 3D-malli tai muu kuva-aineisto julkaistaan asiakkaan kanssa sovitulla tavalla ja sovitulle kohderyhmälle.</p>
+          <p>Kuvausaineistoa ei käytetä henkilön arkaluonteisten ominaisuuksien päättelemiseen eikä kasvojentunnistukseen.</p>
+        </section>
+
+        <section class="policy" id="lomakkeet">
+          <h2>6. Yhteydenottolomakkeet, tarjouspyynnöt ja oppaat</h2>
+          <p>Sivuston lomakkeet voidaan käsitellä Netlify Forms -palvelulla. Lomakkeella annettujen tietojen lisäksi palvelu voi käsitellä lähetyksen teknisiä tietoja roskapostin torjumiseksi, toimituksen varmistamiseksi ja väärinkäytösten selvittämiseksi.</p>
+          <p>Kun käyttäjä pyytää tarjouksen, yhteydenoton tai ladattavan materiaalin, annettuja tietoja käytetään pyynnön toteuttamiseen ja siihen liittyvään asiakasviestintään. Puhelinnumeroa käytetään yhteydenottoon vain, jos käyttäjä antaa sen itse.</p>
+          <p>Oppaan lataaminen ei automaattisesti tarkoita uutiskirjeen tilaamista. Uutiskirje tai muu sähköinen suoramarkkinointi perustuu erilliseen suostumukseen silloin, kun suostumus vaaditaan.</p>
+          <p>Lomakkeen pakolliset tiedot on merkitty lomakkeessa. Ilman tarjouspyynnön tai yhteydenoton käsittelemiseksi tarvittavia tietoja emme välttämättä pysty vastaamaan pyyntöön, laatimaan tarjousta tai tekemään sopimusta. Vapaaehtoisten tietojen antamatta jättämisestä ei aiheudu muita seurauksia.</p>
+        </section>
+
+        <section class="policy" id="markkinointi">
+          <h2>7. Asiakasviestintä ja sähköinen markkinointi</h2>
+          <p>Asiakkaalle voidaan lähettää palveluun, tarjouspyyntöön, asiakassuhteeseen tai hänen pyytämäänsä materiaaliin liittyvää viestintää. Sähköistä suoramarkkinointia lähetetään lain sallimissa tilanteissa tai vastaanottajan suostumuksella.</p>
+          <p>Markkinointiviestien toimitus-, avaus- ja klikkaustietoja voidaan käsitellä viestinnän toimivuuden arvioimiseksi. Avaustieto on suuntaa-antava, koska sähköpostiohjelmien tietosuoja-asetukset vaikuttavat sen muodostumiseen.</p>
+          <p>Suoramarkkinoinnin voi kieltää milloin tahansa viestin peruutuslinkistä tai lähettämällä pyynnön osoitteeseen <a href="mailto:jari@kuvauspalvelusalopino.fi">jari@kuvauspalvelusalopino.fi</a>.</p>
+        </section>
+
+        <section class="policy" id="evasteet">
+          <h2>8. Evästeet ja analytiikka</h2>
+          <p>Sivustolla voidaan käyttää välttämättömiä evästeitä sekä käyttäjän suostumuksella analytiikka- ja markkinointievästeitä tai vastaavia teknologioita.</p>
+          <ul>
+            <li><strong>Välttämättömät:</strong> sivuston tekninen toiminta, tietoturva ja lomakkeiden suojaus.</li>
+            <li><strong>Analytiikka:</strong> sivuston käytön, palvelupolkujen ja konversioiden mittaaminen.</li>
+            <li><strong>Markkinointi:</strong> kampanjoiden toimivuuden arviointi ja mainonnan kohdentaminen, jos tällaisia työkaluja käytetään.</li>
+          </ul>
+          <p>Google Analytics tai muu ei-välttämätön mittaus aktivoidaan vain käyttäjän suostumuksen mukaisesti. Myös ulkopuoliset upotukset voidaan estää ennen tarvittavaa suostumusta. Evästevalintoja voi muuttaa tai suostumuksen peruuttaa milloin tahansa sivuston evästeasetuksista. Evästeiden nimet, tarkoitukset, palveluntarjoajat ja voimassaoloajat esitetään evästehallintapaneelissa.</p>
+        </section>
+
+        <section class="policy" id="tietolahteet">
+          <h2>9. Tietolähteet</h2>
+          <p>Tiedot saadaan pääasiassa rekisteröidyltä itseltään lomakkeiden, sähköpostien, puheluiden, tapaamisten ja asiakasprojektien yhteydessä. Tietoja voi syntyä myös sivuston teknisistä loki- ja analytiikkatiedoista sekä asiakkuuden hoitamiseen käytettävistä järjestelmistä.</p>
+          <p>B2B-yhteydenpidossa yhteystietoja voidaan saada myös julkisista yritysrekistereistä, organisaatioiden verkkosivuilta ja muista asianmukaisista julkisista lähteistä.</p>
+          <p>Kun henkilötiedot saadaan muualta kuin henkilöltä itseltään, käsittelystä informoidaan sovellettavan lainsäädännön edellyttämässä ajassa, tavallisesti viimeistään ensimmäisen yhteydenoton yhteydessä tai kuukauden kuluessa tietojen saamisesta.</p>
+        </section>
+
+        <section class="policy" id="palveluntarjoajat">
+          <h2>10. Palveluntarjoajat ja tietojen luovutukset</h2>
+          <p>Tietojen käsittelyssä voidaan käyttää seuraavia palveluja niiden ollessa käytössä:</p>
+          <ul class="provider-list">
+            <li><strong>Netlify</strong><br>verkkosivuston hosting ja lomakkeiden vastaanotto</li>
+            <li><strong>Microsoft 365 / Outlook</strong><br>sähköposti ja asiakasviestintä</li>
+            <li><strong>MailerLite</strong><br>uutiskirjeet ja markkinointiautomaatio</li>
+            <li><strong>Google Analytics</strong><br>suostumukseen perustuva sivustoanalytiikka</li>
+            <li><strong>Cookiebot</strong><br>evästesuostumusten hallinta</li>
+            <li><strong>Supabase</strong><br>asiakkuudenhallinta, jos asiakastietoja tallennetaan palveluun</li>
+            <li><strong>Matterport</strong><br>3D-mallien käsittely, ylläpito ja verkkoupotukset</li>
+          </ul>
+          <p>Lisäksi voidaan käyttää taloushallinnon, tiedostojen säilytyksen, tietoturvan ja varmuuskopioinnin palveluntarjoajia. Palveluntarjoajat käsittelevät tietoja Kuvauspalvelu Salopino Oy:n lukuun sovittuihin tarkoituksiin. Henkilötietoja ei myydä.</p>
+          <p>Tietoja voidaan luovuttaa viranomaiselle tai muulle taholle, jos laki, viranomaismääräys, sopimusvelvoitteen täyttäminen, oikeusvaateen puolustaminen tai väärinkäytöksen selvittäminen sitä edellyttää.</p>
+        </section>
+
+        <section class="policy" id="siirrot">
+          <h2>11. Tietojen siirrot EU:n tai ETA:n ulkopuolelle</h2>
+          <p>Osa teknisistä palveluntarjoajista voi käsitellä henkilötietoja EU:n tai ETA:n ulkopuolella, esimerkiksi Yhdysvalloissa. Tällöin siirrot suojataan soveltuvan lainsäädännön mukaisella siirtoperusteella, kuten Euroopan komission hyväksymillä vakiosopimuslausekkeilla, tietosuojan riittävyyspäätöksellä tai muulla lainmukaisella mekanismilla.</p>
+          <p>Lisätietoja käytettävistä siirtoperusteista ja sovellettavista suojatoimista voi pyytää tämän selosteen yhteystiedoilla.</p>
+        </section>
+
+        <section class="policy" id="sailytys">
+          <h2>12. Tietojen säilytysajat</h2>
+          <ul>
+            <li>Yhteydenotto- ja tarjouspyyntötietoja säilytetään pääsääntöisesti enintään 24 kuukautta viimeisestä yhteydenotosta, ellei asiakassuhde jatku tai säilyttämiselle ole muuta perustetta.</li>
+            <li>Asiakassuhteeseen, sopimuksiin, laskutukseen ja kirjanpitoon liittyviä tietoja säilytetään sopimussuhteen ja lakisääteisten velvoitteiden edellyttämän ajan.</li>
+            <li>Uutiskirjeen tilaajan tietoja säilytetään, kunnes suostumus peruutetaan tai tiedot eivät enää ole tarpeellisia.</li>
+            <li>Dronekuvausten alkuperäisiä ja työnaikaisia aineistoja säilytetään pääsääntöisesti enintään kuusi kuukautta toimituksesta, ellei pidemmästä säilytyksestä ole sovittu tai siihen ole muuta perustetta.</li>
+            <li>Verkossa ylläpidettäviä 3D-malleja ja niihin liittyviä tietoja säilytetään sovitun hosting- tai palvelujakson ajan sekä mahdollisen kohtuullisen teknisen sulkemis- ja varmistusajan.</li>
+            <li>Muita kuvaus- ja projektiaineistoja säilytetään toimeksiannon, asiakkaan ohjeiden, sopimuksen ja käyttötarkoituksen edellyttämän ajan, minkä jälkeen aineisto poistetaan tai anonymisoidaan, ellei säilyttämiselle ole lakisääteistä tai muuta lainmukaista perustetta.</li>
+            <li>Teknisiä loki- ja tietoturvatietoja säilytetään vain toimivuuden, tietoturvan ja väärinkäytösten ehkäisyn kannalta tarpeellinen aika.</li>
+            <li>Analytiikka- ja evästetietojen säilytysajat määräytyvät käytetyn työkalun asetusten ja evästehallintapaneelissa ilmoitettujen aikojen mukaan.</li>
+          </ul>
+        </section>
+
+        <section class="policy" id="suojaus">
+          <h2>13. Rekisterin suojaus</h2>
+          <p>Henkilötietoja käsitellään luottamuksellisesti ja suojataan asianmukaisin teknisin ja organisatorisin toimenpitein. Keinoja ovat muun muassa käyttöoikeuksien rajaaminen, vahvat salasanat, kaksivaiheinen tunnistautuminen, suojatut yhteydet, varmuuskopiointi, ohjelmistopäivitykset ja palveluntarjoajien sopimukselliset tietosuojavelvoitteet.</p>
+          <p>Tietoihin pääsevät vain ne henkilöt ja palveluntarjoajat, joilla on työtehtävän, palvelun toteuttamisen tai teknisen ylläpidon perusteella tarve käsitellä niitä.</p>
+        </section>
+
+        <section class="policy" id="oikeudet">
+          <h2>14. Rekisteröidyn oikeudet</h2>
+          <p>Sovellettavan tietosuojalainsäädännön mukaisesti sinulla voi olla oikeus:</p>
+          <ul>
+            <li>saada tieto henkilötietojesi käsittelystä ja pääsy omiin tietoihisi</li>
+            <li>pyytää virheellisen tai puutteellisen tiedon oikaisua</li>
+            <li>pyytää tietojen poistamista tai käsittelyn rajoittamista lain edellytysten täyttyessä</li>
+            <li>vastustaa oikeutettuun etuun perustuvaa käsittelyä ja suoramarkkinointia</li>
+            <li>peruuttaa suostumuksesi milloin tahansa</li>
+            <li>saada itse toimittamasi tiedot siirrettyä järjestelmästä toiseen lain edellytysten täyttyessä</li>
+            <li>tehdä valitus valvontaviranomaiselle.</li>
+          </ul>
+          <p>Suomessa valvontaviranomainen on <a href="https://tietosuoja.fi/" rel="noopener noreferrer">Tietosuojavaltuutetun toimisto</a>. Oikeuksia koskevan pyynnön voi lähettää osoitteeseen <a href="mailto:jari@kuvauspalvelusalopino.fi">jari@kuvauspalvelusalopino.fi</a>. Henkilöllisyys voidaan tarvittaessa varmistaa ennen pyynnön käsittelyä.</p>
+          <h3>Automatisoitu päätöksenteko</h3>
+          <p>Henkilötietojen perusteella ei tehdä pelkästään automaattiseen käsittelyyn perustuvia päätöksiä, joilla olisi henkilöä koskevia oikeusvaikutuksia tai muita vastaavalla tavalla merkittäviä vaikutuksia. Viestintää voidaan ajoittaa tai kohdentaa automaation avulla, mutta tämä ei johda tällaiseen automatisoituun päätöksentekoon.</p>
+        </section>
+
+        <section class="policy" id="muutokset">
+          <h2>15. Ulkopuoliset palvelut ja muutokset</h2>
+          <p>Sivustolla voi olla linkkejä tai upotuksia ulkopuolisiin palveluihin. Niillä on omat tietosuoja- ja evästekäytäntönsä, eikä Kuvauspalvelu Salopino Oy vastaa ulkopuolisten palvelujen sisällöstä tai tietosuojakäytännöistä.</p>
+          <p>Tätä selostetta päivitetään, jos palvelut, sivuston toiminnallisuudet, käytettävät järjestelmät tai lainsäädäntö muuttuvat. Ajantasainen versio ja päivityspäivä julkaistaan tällä sivulla.</p>
+          <div class="contact-card">
+            <strong>Kuvauspalvelu Salopino Oy</strong><br>
+            Jari Salopino<br>
+            <a href="mailto:jari@kuvauspalvelusalopino.fi">jari@kuvauspalvelusalopino.fi</a><br>
+            <a href="tel:+358405039850">040 503 9850</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>© 2026 Kuvauspalvelu Salopino Oy · Y-tunnus 3322279-3</footer>
+</body>
+</html>
