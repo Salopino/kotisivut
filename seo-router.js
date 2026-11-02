@@ -4,11 +4,11 @@
   var base = "https://www.kuvauspalvelusalopino.fi";
   var routes = {
     etusivu: ["/", "Kuvauspalvelu Salopino Oy – 3D-, drone- ja lämpökuvaus | Pirkanmaa", "Kiinteistöjen 3D-kuvaus, drone- ja lämpökuvaus, ortokuvat ja pistepilvet yhdeltä toimijalta. Yli 110 000 m² kuvattua tilaa. Pirkanmaa ja koko Suomi."],
-    matterport: ["/3d-kuvaus/", "3D-kuvaus ja virtuaalikierrokset kiinteistöille | Salopino", "Matterport Pro3 -LiDARilla toteutettu 3D-kuvaus, virtuaalikierros, dollhouse-näkymä ja pohjapiirros. Palvelu Pirkanmaalla ja koko Suomessa."],
-    drone: ["/dronekuvaus/", "Dronekuvaus kiinteistöille ja työmaille | Salopino", "Ammattimainen dronekuvaus, ilmakuvat, 4K-video, tarkastuslennot ja työmaaseuranta. Vakuutettu ja Traficom-hyväksytty toimija koko Suomessa."],
-    lampo: ["/lampokuvaus/", "Drone-lämpökuvaus kiinteistöille ja aurinkopaneeleille", "Radiometrinen drone-lämpökuvaus paljastaa lämpövuodot, kosteusriskit ja aurinkopaneelien viat. Palvelu taloyhtiöille ja yrityksille koko Suomessa."],
-    orto: ["/ortokuvaus-ja-kartoitus/", "Ortokuvat ja RTK-kartoitus suunnitteluun | Salopino", "RTK-korjatut ortokuvat, GeoTIFF-aineistot, korkeusmallit ja pistepilvet tonttien, infran ja työmaiden suunnitteluun."],
-    perehdytys: ["/virtuaaliperehdytys/", "Virtuaaliperehdytys ja turvallisuuskierrokset | Salopino", "Perehdytä henkilöstö ja alihankkijat kiinteistöön etänä. Kulkureitit, turvallisuusohjeet, videot ja dokumentit samassa 3D-ympäristössä."],
+    matterport: ["/3d-kuvaus/", "Matterport 3D-kuvaus Tampereella | Kuvauspalvelu Salopino", "Matterport Pro3 -3D-kuvaus ja digitaaliset kaksoset kiinteistöille. Virtuaalikierrokset, dokumentointi ja pistepilvet Tampereella, Lempäälässä ja koko Suomessa."],
+    drone: ["/dronekuvaus/", "Dronekuvaus Tampereella ja Pirkanmaalla | Salopino", "Dronekuvaus, ilmakuvat, videot ja kiinteistöjen tarkastukset Tampereella, Lempäälässä, Pirkanmaalla ja koko Suomessa."],
+    lampo: ["/lampokuvaus/", "Drone-lämpökuvaus Tampereella | Kuvauspalvelu Salopino", "Kiinteistöjen ja kattojen drone-lämpökuvaus lämpöpoikkeamien paikantamiseen. Taloyhtiöille ja yrityksille Tampereella, Pirkanmaalla ja koko Suomessa."],
+    orto: ["/ortokuvaus-ja-kartoitus/", "Ortokartoitus ja RTK-ortokuvat Tampereella | Salopino", "Ortokartoitus, RTK-ortokuvat, GeoTIFF-aineistot ja pistepilvet tonttien, infran ja työmaiden suunnitteluun Tampereella, Pirkanmaalla ja koko Suomessa."],
+    perehdytys: ["/virtuaaliperehdytys/", "Virtuaaliperehdytys ja 3D-turvallisuuskierros | Salopino", "Virtuaaliperehdytys 3D-ympäristössä: kulkureitit, turvallisuusohjeet ja dokumentit henkilöstölle. Toteutukset Tampereelta koko Suomeen."],
     pistepilvi: ["/pistepilvi-e57/", "Pistepilvi E57 ja BIM-valmis 3D-aineisto | Salopino", "Mittatarkka E57-pistepilvi saneeraussuunnitteluun, as-built-dokumentointiin ja CAD/BIM-työskentelyyn Matterport Pro3 -LiDARilla."],
     referenssit: ["/referenssit/", "Referenssit – 3D-, drone- ja lämpökuvaukset | Salopino", "Tutustu Kuvauspalvelu Salopino Oy:n toteutuksiin kiinteistöissä, teollisuudessa, museoissa, tapahtumatiloissa ja taloyhtiöissä."],
     blogi: ["/oppaat/", "Oppaat – 3D-kuvaus, drone, lämpö ja kartoitus", "Käytännön oppaita kiinteistöjen 3D-kuvauksesta, dronekuvauksesta, lämpökartoituksesta, ortokuvista ja pistepilviaineistoista."],
